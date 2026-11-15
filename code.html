@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Green Tech Solution Enterprises | Premium Indian Agricultural Exporter</title>
+<!-- Google Fonts: Literata & Nunito Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..800;1,7..72,300..800&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f4f6f3",
+            "inverse-primary": "#a8c8e8",
+            "inverse-on-surface": "#eef3f2",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#d9eee8",
+            "secondary-fixed-dim": "#c8d1d2",
+            "on-surface-variant": "#46534f",
+            "primary": "#2f6f60",
+            "on-tertiary-fixed": "#101c26",
+            "on-secondary-container": "#43545a",
+            "on-primary-fixed-variant": "#245549",
+            "tertiary-container": "#91aec8",
+            "secondary-fixed": "#e2e9eb",
+            "tertiary-fixed": "#d5e4f1",
+            "surface-container-high": "#e3e9e6",
+            "on-tertiary-fixed-variant": "#3e5870",
+            "primary-container": "#69a393",
+            "surface-container": "#e9eeeb",
+            "on-secondary-fixed": "#172126",
+            "inverse-surface": "#101816",
+            "secondary-container": "#e2eaed",
+            "surface-tint": "#2f6f60",
+            "background": "#f4f6f3",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#dce4e1",
+            "primary-fixed": "#cde7df",
+            "on-error": "#ffffff",
+            "error": "#b83230",
+            "surface-variant": "#dce4e1",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f0f4f2",
+            "secondary": "#5c6c68",
+            "primary-fixed-dim": "#9ed1c0",
+            "on-surface": "#17211e",
+            "on-tertiary-container": "#334e65",
+            "surface-bright": "#f4f6f3",
+            "outline": "#6f7f79",
+            "outline-variant": "#bdcac5",
+            "tertiary": "#4c6f8e",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#abc6dd",
+            "on-secondary-fixed-variant": "#3e5058",
+            "on-error-container": "#690005",
+            "surface-dim": "#d1dbd7",
+            "error-container": "#ffdad8",
+            "on-primary-fixed": "#06231b",
+            "on-background": "#17211e"
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            headline: ["Literata", "serif"],
+            display: ["Literata", "serif"],
+            body: ["Nunito Sans", "sans-serif"],
+            label: ["Nunito Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    body {
+      background-color: #f4f6f3;
+      color: #17211e;
+      font-family: 'Nunito Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #91aec8;
+      border-radius: 9999px;
+    }
+    section[id] {
+      scroll-margin-top: 6rem;
+    }
+    [hidden] {
+      display: none !important;
+    }
+    .site-header {
+      transition: background-color 250ms ease, border-color 250ms ease, box-shadow 250ms ease, backdrop-filter 250ms ease;
+    }
+    .site-header.is-scrolled {
+      background: linear-gradient(115deg, rgba(255, 255, 255, 0.52), rgba(244, 246, 243, 0.34));
+      -webkit-backdrop-filter: blur(10px) saturate(180%);
+      backdrop-filter: blur(10px) saturate(180%);
+      border-bottom-color: rgba(255, 255, 255, 0.55);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 8px 24px rgba(46, 50, 48, 0.08);
+    }
+    .site-header.is-scrolled #mobile-navigation {
+      background: rgba(244, 246, 243, 0.58);
+    }
+    .hero-scene {
+      background:
+        radial-gradient(circle at 75% 20%, rgba(168, 200, 232, 0.35), transparent 38%),
+        radial-gradient(circle at 20% 85%, rgba(105, 163, 147, 0.28), transparent 45%),
+        linear-gradient(135deg, #080d0c 0%, #101816 52%, #172a38 100%);
+    }
+    .hero-scene video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    :focus-visible {
+      outline: 3px solid #4c6f8e;
+      outline-offset: 4px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<a class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow-lg transition-transform focus:translate-y-0" href="#main-content">Skip to main content</a>
+<!-- 1. TOP UTILITY BAR & STICKY NAVIGATION -->
+<!-- Top Utility Bar -->
+<div class="bg-inverse-surface text-inverse-on-surface text-xs py-2 px-6 lg:px-8 border-b border-outline/20">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+<div class="flex items-center gap-3 font-medium tracking-wide">
+<span class="inline-flex items-center gap-1 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-sm">verified</span>
+          IEC Verified Indian Exporter
+        </span>
+</div>
+<div class="flex items-center gap-4 text-xs">
+<a class="flex items-center gap-1.5 hover:text-primary-fixed transition-colors" href="tel:0987654321">
+<span class="material-symbols-outlined text-sm">call</span>
+<span>0987654321</span>
+</a>
+<span class="text-outline-variant/40">|</span>
+<a class="flex items-center gap-1.5 hover:text-primary-fixed transition-colors" href="mailto:export@greentechsol.in">
+<span class="material-symbols-outlined text-sm">mail</span>
+<span>export@greentechsol.in</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Shared TopNavBar Anchor Implementation -->
+<header class="site-header sticky top-0 w-full z-50 bg-surface border-b border-outline-variant/30" id="site-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-3 h-20">
+<a class="flex items-center gap-2.5 group shrink-0" href="#home" aria-label="Green Tech Solution Enterprises home">
+<div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm group-hover:scale-105 transition-transform duration-200">
+<span class="material-symbols-outlined text-2xl">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline text-base sm:text-lg xl:text-xl font-bold tracking-tight text-primary">
+<span class="sm:hidden">Green Tech Agro</span>
+<span class="hidden sm:inline">Green Tech Solution Enterprises</span>
+</span>
+<span class="font-label text-[10px] sm:text-xs uppercase tracking-widest text-secondary font-semibold">Global Agro Exports India</span>
+</div>
+</a>
+<nav aria-label="Primary navigation" class="hidden xl:flex items-center gap-5 whitespace-nowrap">
+<a class="font-headline font-semibold text-sm text-primary border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="font-label text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#commodities">Commodities</a>
+<a class="font-label text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#certifications">Quality &amp; Certifications</a>
+<a class="font-label text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#why-us">Why Choose Us</a>
+<a class="font-label text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#insights">Market Insights</a>
+<a class="font-label text-sm font-medium text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-2 sm:gap-3">
+<a class="hidden sm:inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label text-sm font-semibold whitespace-nowrap shadow-sm hover:bg-primary/90 transition-all active:scale-95" href="#contact">
+<span>Request Quote</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<button aria-controls="mobile-navigation" aria-expanded="false" aria-label="Open navigation menu" class="xl:hidden w-11 h-11 inline-flex items-center justify-center rounded-full border border-primary/25 text-primary hover:bg-primary/5 transition-colors" id="menu-button" type="button">
+<span class="material-symbols-outlined" id="menu-icon">menu</span>
+</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="xl:hidden border-t border-outline-variant/30 bg-surface px-4 sm:px-6 py-4" id="mobile-navigation" hidden>
+<div class="max-w-7xl mx-auto grid grid-cols-2 gap-2">
+<a class="rounded-lg px-4 py-3 text-sm font-semibold text-primary bg-primary/5" href="#home">Home</a>
+<a class="rounded-lg px-4 py-3 text-sm font-medium hover:bg-primary/5 hover:text-primary" href="#commodities">Commodities</a>
+<a class="rounded-lg px-4 py-3 text-sm font-medium hover:bg-primary/5 hover:text-primary" href="#certifications">Quality &amp; Certifications</a>
+<a class="rounded-lg px-4 py-3 text-sm font-medium hover:bg-primary/5 hover:text-primary" href="#why-us">Why Choose Us</a>
+<a class="rounded-lg px-4 py-3 text-sm font-medium hover:bg-primary/5 hover:text-primary" href="#insights">Market Insights</a>
+<a class="rounded-lg px-4 py-3 text-sm font-medium hover:bg-primary/5 hover:text-primary" href="#contact">Contact</a>
+<a class="col-span-2 mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white sm:hidden" href="#contact">Request Export Quote<span class="material-symbols-outlined text-base">arrow_forward</span></a>
+</div>
+</nav>
+</header>
+<main id="main-content">
+<!-- 2. SPLIT-SCREEN HERO SECTION -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16" id="home">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-secondary-container border border-outline-variant/40 text-on-secondary-container text-xs font-semibold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Trusted Agricultural Exporter from India</span>
+</div>
+<h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-on-surface leading-[1.15]">
+          Pure Indian Harvests, Delivered to Global Markets.
+        </h1>
+<p class="font-body text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+          Source agricultural and sustainable products through one Indian export partner, with product-specific quality checks, export documentation, and FOB or CIF freight coordination.
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-on-primary font-semibold text-base shadow hover:bg-primary/90 active:scale-95 transition-all" href="#commodities">
+<span>Explore Commodities</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-surface-container border border-outline-variant/60 text-on-surface font-semibold text-base hover:bg-surface-container-high active:scale-95 transition-all" data-profile-request href="#contact">
+<span class="material-symbols-outlined text-tertiary">description</span>
+<span>Request Company Profile</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="relative min-h-[360px] sm:min-h-[440px] lg:min-h-[540px] overflow-hidden rounded-[2rem] border border-tertiary-container/30 bg-inverse-surface shadow-[0_28px_70px_-28px_rgba(16,24,22,0.65)] ring-1 ring-white/10">
+<div aria-hidden="true" class="hero-scene absolute inset-0">
+<video class="h-full w-full object-cover" id="hero-video" autoplay loop muted playsinline preload="auto" tabindex="-1">
+<source src="assets/scene.webm" type="video/webm"/>
+</video>
+</div>
+<div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#080d0c]/85 to-transparent pointer-events-none"></div>
+<div class="absolute inset-x-5 bottom-5 sm:inset-x-7 sm:bottom-7 pointer-events-none text-white">
+<p class="font-label text-[11px] font-bold uppercase tracking-[0.2em] text-white/80">Indian origin · Global reach</p>
+<p class="font-headline text-xl sm:text-2xl font-bold mt-1">From our farms to your next opportunity.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. CERTIFICATIONS & GLOBAL COMPLIANCE STRIP -->
+<section class="py-8 bg-surface-container-lowest border-y border-outline-variant/30" id="certifications">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-3 text-left">
+<div class="p-2.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div>
+<h2 class="font-headline font-bold text-sm text-on-surface">Global Trade Accreditations</h2>
+<p class="font-body text-xs text-secondary">Fully compliant with international food safety and import guidelines</p>
+</div>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center w-full md:w-auto">
+<div class="flex flex-col items-center text-center p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">approval</span>
+<span class="font-headline text-xs font-bold text-on-surface">APEDA</span>
+<span class="text-[10px] text-secondary">Govt of India</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">health_and_safety</span>
+<span class="font-headline text-xs font-bold text-on-surface">FSSAI</span>
+<span class="text-[10px] text-secondary">Food Authority</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">spa</span>
+<span class="font-headline text-xs font-bold text-on-surface">USDA</span>
+<span class="text-[10px] text-secondary">Organic Standard</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">verified</span>
+<span class="font-headline text-xs font-bold text-on-surface">ISO 22000</span>
+<span class="text-[10px] text-secondary">Food Safety</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">science</span>
+<span class="font-headline text-xs font-bold text-on-surface">Phytosanitary</span>
+<span class="text-[10px] text-secondary">Customs Inspected</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl mb-1">fact_check</span>
+<span class="font-headline text-xs font-bold text-on-surface">GMP Certified</span>
+<span class="text-[10px] text-secondary">Manufacturing Practice</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. FEATURED EXPORT CATALOG (6-CARD INTERACTIVE GRID) -->
+<section class="py-16 lg:py-24 max-w-7xl mx-auto px-6 lg:px-8" id="commodities">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<div class="inline-flex items-center gap-1.5 text-primary font-semibold text-xs uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base">inventory_2</span>
+<span>Verified Indian Export Portfolio</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl font-extrabold text-on-surface">Our Core Export Commodities</h2>
+<p class="font-body text-base text-secondary max-w-2xl mt-2">
+          Sourced from certified organic clusters across India, processed to strict international phytosanitary standards, and packaged for extended sea freight freshness.
+        </p>
+</div>
+<!-- Filter Pills -->
+<div aria-label="Filter export commodities" class="flex flex-wrap gap-2" role="group">
+<button aria-pressed="true" class="catalog-filter px-4 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold shadow-sm transition-colors" data-filter="all" type="button">All Commodities</button>
+<button aria-pressed="false" class="catalog-filter px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high text-xs font-semibold transition-colors" data-filter="superfoods" type="button">Superfoods</button>
+<button aria-pressed="false" class="catalog-filter px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high text-xs font-semibold transition-colors" data-filter="spices" type="button">Spices &amp; Grains</button>
+<button aria-pressed="false" class="catalog-filter px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high text-xs font-semibold transition-colors" data-filter="soil" type="button">Soil &amp; Eco</button>
+</div>
+</div>
+<p aria-live="polite" class="sr-only" id="catalog-status">Showing all 6 commodities</p>
+<!-- 3x2 Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="catalog-grid">
+<!-- Card 1: Organic Moringa -->
+<div class="commodity-card bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow" data-category="superfoods" data-commodity="Organic Moringa Leaf Powder">
+<div>
+<div class="relative h-52 w-full overflow-hidden">
+<img class="w-full h-full object-cover" alt="Deep green shade-dried moringa oleifera powder fine textured on clean white ceramic background with fresh green drumstick leaves. The lighting is crisp and natural highlighting the bright chlorophyll green color of top-tier export moringa. The aesthetic is clean, pharmaceutical grade, organic, and grounded in Indian agricultural purity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv0HxjeoW39QJlsbDqGMND6wbabsHS8tmtt1WbFjzqG3Tf_XI23PgFfhR2YSe1WlLYujx-36uoX5L7hzxn0OnC_vh3hKqh3CRf-vi1zIZjraGoXgAmC8IOsxzIkvYO6p9F0xRuFi9QK14TyZFfFcz0tTZWRDC9UqL29tDyQlnTaZtob9wDWnViv1OXHfNr8BAgFuGd55RaXQ-pSY2RztK4zhMNscXmRW41rZ_TekY"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-on-surface text-xs font-bold border border-outline-variant/30">
+              HS Code: 12119029
+            </span>
+</div>
+<div class="p-6">
+<div class="text-xs font-semibold text-tertiary uppercase tracking-wider mb-1">Superfoods &amp; Botanicals</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Organic Moringa Leaf Powder</h3>
+<p class="font-body text-xs text-secondary mb-4">Origin: Tamil Nadu &amp; Western India clusters. 100% leaf fine mesh without heavy metal traces.</p>
+<div class="space-y-2 py-3 border-t border-b border-outline-variant/20 text-xs">
+<div class="flex justify-between">
+<span class="text-secondary">Purity / Specs:</span>
+<span class="font-semibold text-on-surface">Moisture &lt; 7% | 80-100 Mesh</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Standard Packaging:</span>
+<span class="font-semibold text-on-surface">25kg Vacuum Bags / Foil</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Testing:</span>
+<span class="font-semibold text-primary">SGS / Eurofins Certified</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 rounded-full bg-surface-container text-primary font-semibold text-xs border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors" data-rfq href="#contact">
+<span>Request FOB/CIF Price</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Organic Spices -->
+<div class="commodity-card bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow" data-category="spices" data-commodity="Whole / Ground Spices (Turmeric, Pepper)">
+<div>
+<div class="relative h-52 w-full overflow-hidden">
+<img class="w-full h-full object-cover" alt="Rich golden yellow whole turmeric fingers and finely milled turmeric powder arranged alongside jet-black Tellicherry peppercorns and coriander seeds in rustic bowls. The warm lighting brings out deep turmeric orange and rich amber hues. Grounded earthy setting reflecting high curcumin Indian spice exports with authentic organic heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkIhGIq6mgWziY69r0NfAGHIKoGAW0Ag1MSHvMO--eQ7dBtB_jVX_WcRmTd7634VKtA-ZwEElF1AHcJH1DV4D2KxKIqre_wODYxdauowxO4bmmsdXYZbsnwL_3dz4JRjRIbbkpsxM5KsS-jnvfmxuM3V69HWss9Y5YL8kK1hzUBltEdmctaP6G5uGIGK1cA-kdrPzugRzqFVlIkcMcWJkZTlrf8KXkla3uog7uxhY"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-on-surface text-xs font-bold border border-outline-variant/30">
+              HS Code: 091030 / 090931
+            </span>
+</div>
+<div class="p-6">
+<div class="text-xs font-semibold text-tertiary uppercase tracking-wider mb-1">Spices &amp; Seasonings</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Whole &amp; Ground Organic Spices</h3>
+<p class="font-body text-xs text-secondary mb-4">Salem Turmeric, Malabar Black Pepper, Cumin, and Coriander with guaranteed volatile oil content.</p>
+<div class="space-y-2 py-3 border-t border-b border-outline-variant/20 text-xs">
+<div class="flex justify-between">
+<span class="text-secondary">Key Parameters:</span>
+<span class="font-semibold text-on-surface">Curcumin 5%+ | Steam Sterilized</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Standard Packaging:</span>
+<span class="font-semibold text-on-surface">Multi-wall Kraft Bags (25/50kg)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Compliance:</span>
+<span class="font-semibold text-primary">EU / US FDA Pesticide Free</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 rounded-full bg-surface-container text-primary font-semibold text-xs border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors" data-rfq href="#contact">
+<span>Request FOB/CIF Price</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Basmati Rice -->
+<div class="commodity-card bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow" data-category="spices" data-commodity="Indian Basmati / Non-Basmati Rice">
+<div>
+<div class="relative h-52 w-full overflow-hidden">
+<img class="w-full h-full object-cover" alt="Pristine white extra long grains of 1121 steam Basmati rice poured from a natural burlap sack onto a clean slate surface. Warm soft sunlight highlights the pearlescent translucent quality of the unbroken elongated rice grains. Visual mood is premium, disciplined, commercial export ready with natural earthy undertones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsUEXk7Z-eBRIy4X6uhYiIZ0RVKC1JXnw2NTv0WvWS3Im0NFMCzywNnM2VT_txLssgcb0ZR9y43h9as6j6aX76S2m0DXjlT_4X4dZHGuJv56vQxaGgGxneXJuUerGjSTYMyLjTYm7ZhcRvCIwIoS1jCvePjYdLm_07GzEnhTH_CezuzbYJki5QadioGMVlduEOnxKhN0jLehz0PIdoN4dMeMUHFWIMGD2yvWmG164"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-on-surface text-xs font-bold border border-outline-variant/30">
+              HS Code: 10063020
+            </span>
+</div>
+<div class="p-6">
+<div class="text-xs font-semibold text-tertiary uppercase tracking-wider mb-1">Cereals &amp; Food Grains</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Premium Indian Basmati Rice</h3>
+<p class="font-body text-xs text-secondary mb-4">1121 Steam, Golden Sella, and Organic Traditional White Basmati with intense natural aroma.</p>
+<div class="space-y-2 py-3 border-t border-b border-outline-variant/20 text-xs">
+<div class="flex justify-between">
+<span class="text-secondary">Grain Length:</span>
+<span class="font-semibold text-on-surface">Avg 8.35mm+ | Moisture &lt; 12.5%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Packaging:</span>
+<span class="font-semibold text-on-surface">10kg / 25kg Non-Woven BOPP</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Certificates:</span>
+<span class="font-semibold text-primary">DNA Purity &amp; Non-GMO Inspected</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 rounded-full bg-surface-container text-primary font-semibold text-xs border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors" data-rfq href="#contact">
+<span>Request FOB/CIF Price</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Groundnuts -->
+<div class="commodity-card bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow" data-category="superfoods" data-commodity="Export Groundnuts (Peanuts)">
+<div>
+<div class="relative h-52 w-full overflow-hidden">
+<img class="w-full h-full object-cover" alt="Uniformly sized, clean shelled Indian Java and Bold peanuts displayed in a rustic wooden bowl on an organic warm cream surface. The kernels have smooth pinkish-tan skins with zero blemishes. Gentle natural lighting shows off the export grade grading and freshness. The scene conveys high-grade food oil and confectionery export quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFlCBv1TMFvrclLT6B1RNJCA9RvaazzeBPz8F86qfDDiY0eqtVGPS5XSV8iAc2zpTF9lCuamstDZYGl-eAKFyDqv-L6JFWqP4LkzQvEVgp2RT8Xb18wXW-EBulNZpFbKofoCZOvHSurNr98Qlw825BxtLQuddgCov1wX1UOJ1brz3O0ivcI45b1sZrdrm8mj63FQPamRMxepIgJGnS3AAEzs_42yPBSoswk1XLiOE"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-on-surface text-xs font-bold border border-outline-variant/30">
+              HS Code: 120242
+            </span>
+</div>
+<div class="p-6">
+<div class="text-xs font-semibold text-tertiary uppercase tracking-wider mb-1">Oilseeds &amp; Legumes</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Export-Grade Groundnuts (Peanuts)</h3>
+<p class="font-body text-xs text-secondary mb-4">Origin: Gujarat &amp; Saurashtra belt. Bold 40/50, 50/60 &amp; Java varieties sorted by electronic color sorters.</p>
+<div class="space-y-2 py-3 border-t border-b border-outline-variant/20 text-xs">
+<div class="flex justify-between">
+<span class="text-secondary">Aflatoxin:</span>
+<span class="font-semibold text-on-surface">Strictly &lt; 4 ppb (EU compliant)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Moisture:</span>
+<span class="font-semibold text-on-surface">Max 7% to 8%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Packaging:</span>
+<span class="font-semibold text-primary">25kg/50kg Jute or Vacuum Poly</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 rounded-full bg-surface-container text-primary font-semibold text-xs border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors" data-rfq href="#contact">
+<span>Request FOB/CIF Price</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 5: Vermicompost -->
+<div class="commodity-card bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow" data-category="soil" data-commodity="Organic Vermicompost">
+<div>
+<div class="relative h-52 w-full overflow-hidden">
+<img class="w-full h-full object-cover" alt="Rich dark crumbly organic vermicompost black gold soil conditioner held tenderly in open hands over lush soil beds. Small seedlings sprout nearby. The lighting is warm and natural showing moisture retention, friable soil texture, and organic biological richness. Warm earth tones convey restorative agriculture and export grade soil amendments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC186IPp4RNH9KBa31WTO86mvgDW4PqWEwAq-1-F5x0hyo9svXg6GBTsKlPsEQUzkg19ntjlxJ83YFBlRXFom5mHwNl6oUk-LcD3XLRnjJaGDKXhQWRSIZMxcS8u-DxHmSExTxdBQ65IP-DZjemO9ebXlTAMjfc-FHSeGeNbwztskBdSThgzHYK78e3mGKm7Zqd0HqY4tYUS_7_A0O9iJMXedT0r6JvrrcUkXdp9nE"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-on-surface text-xs font-bold border border-outline-variant/30">
+              HS Code: 310590
+            </span>
+</div>
+<div class="p-6">
+<div class="text-xs font-semibold text-tertiary uppercase tracking-wider mb-1">Organic Soil Inputs</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Nutrient-Rich Organic Vermicompost</h3>
+<p class="font-body text-xs text-secondary mb-4">100% biological earthworm castings enriched with beneficial microbes and natural micronutrients.</p>
+<div class="space-y-2 py-3 border-t border-b border-outline-variant/20 text-xs">
+<div class="flex justify-between">
+<span class="text-secondary">Organic Carbon:</span>
+<span class="font-semibold text-on-surface">&gt; 18% | Balanced C:N Ratio</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Moisture:</span>
+<span class="font-semibold text-on-surface">15% - 25% Optimal</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Packaging:</span>
+<span class="font-semibold text-primary">50kg Heavy-Duty HDPE Bags</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 rounded-full bg-surface-container text-primary font-semibold text-xs border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors" data-rfq href="#contact">
+<span>Request FOB/CIF Price</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 6: Eco-Friendly Products -->
+<div class="commodity-card bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow" data-category="soil" data-commodity="Eco Areca Dinnerware &amp; Jute Bags">
+<div>
+<div class="relative h-52 w-full overflow-hidden">
+<img class="w-full h-full object-cover" alt="An artisanal setting featuring neat stacks of pressed areca nut palm leaf square plates, round bowls, and handcrafted woven golden jute shopping bags. The soft warm studio lighting accentuates the organic wood grain texture of the areca leaves and the robust fiber weave of the jute bags. Beautiful, sustainable, zero-waste export goods from India." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_gKCyvdtj3sX8GFltYaZ0fBOEuveERKyC4lh6HsQwUMtwPSdhcA4a2J3GCCIC09f9xqYl9jMthFqejtGcR7Rq4W2bVPhEIAEs6P6Oc3I1_UqsAxAX9qG1voyF7jyzX3Y3r_X3mMkY7Jfz1BPVUa_fhWIBDuvyIl1GJ_dtxxB4aQXAEWv-LYApK2Vrix8xzP71bCh2chO06oBR4kqKgoZ31FAL20r5Ueh3zkuXsYI"/>
+<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-on-surface text-xs font-bold border border-outline-variant/30">
+              HS Code: 460219
+            </span>
+</div>
+<div class="p-6">
+<div class="text-xs font-semibold text-tertiary uppercase tracking-wider mb-1">Sustainable Lifestyle &amp; Ware</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-2">Biodegradable Eco-Friendly Products</h3>
+<p class="font-body text-xs text-secondary mb-4">Heat-pressed areca palm dinnerware and export-quality golden jute bags. Microwave safe and plastic-free.</p>
+<div class="space-y-2 py-3 border-t border-b border-outline-variant/20 text-xs">
+<div class="flex justify-between">
+<span class="text-secondary">Durability:</span>
+<span class="font-semibold text-on-surface">Hot/Cold resistant | Chemical-free</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Packaging:</span>
+<span class="font-semibold text-on-surface">Shrink-wrapped Master Cartons</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Certification:</span>
+<span class="font-semibold text-primary">TUV / SGS Food Contact Safe</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="w-full flex items-center justify-center gap-2 py-2.5 rounded-full bg-surface-container text-primary font-semibold text-xs border border-primary/20 hover:bg-primary hover:text-on-primary transition-colors" data-rfq href="#contact">
+<span>Request FOB/CIF Price</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. WHY GLOBAL BUYERS CHOOSE US -->
+<section class="py-16 lg:py-20 bg-surface-container-high/60 border-y border-outline-variant/30" id="why-us">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="max-w-3xl mb-10">
+<div class="inline-flex items-center gap-1.5 text-primary font-semibold text-xs uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base">verified</span>
+<span>The Green Tech Assurance</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl font-extrabold text-on-surface mb-4">A Clearer Way to Source from India</h2>
+<p class="font-body text-base text-secondary">Practical support from product selection and packaging to quality documentation and port coordination.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">psychology_alt</span>
+</div>
+<h3 class="font-headline font-bold text-base text-on-surface mb-2">Farm-Level Traceability</h3>
+<p class="font-body text-sm text-secondary leading-relaxed">Source lot details and supplier records help connect each shipment to its origin.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30">
+<div class="w-10 h-10 rounded-lg bg-tertiary/10 text-tertiary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">palette</span>
+</div>
+<h3 class="font-headline font-bold text-base text-on-surface mb-2">Private Labeling &amp; OEM</h3>
+<p class="font-body text-sm text-secondary leading-relaxed">Bulk, retail, and custom packaging options with branding and barcode support.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">science</span>
+</div>
+<h3 class="font-headline font-bold text-base text-on-surface mb-2">Pre-Shipment Testing</h3>
+<p class="font-body text-sm text-secondary leading-relaxed">Independent laboratory testing and product documentation arranged to match your requirements.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30">
+<div class="w-10 h-10 rounded-lg bg-tertiary/10 text-tertiary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-xl">anchor</span>
+</div>
+<h3 class="font-headline font-bold text-base text-on-surface mb-2">Port &amp; Freight Coordination</h3>
+<p class="font-body text-sm text-secondary leading-relaxed">FOB and CIF shipment planning through major Indian ports with clear document handover.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. EXPORT & MARKET INSIGHTS -->
+<section class="py-16 lg:py-20 max-w-7xl mx-auto px-6 lg:px-8" id="insights">
+<div class="max-w-3xl mb-10">
+<div class="inline-flex items-center gap-1.5 text-primary font-semibold text-xs uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base">auto_stories</span>
+<span>Trade Knowledge &amp; Regulatory Updates</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl font-extrabold text-on-surface mb-3">Export &amp; Market Insights</h2>
+<p class="font-body text-base text-secondary">Short buyer guides to help you compare specifications, shipping terms, and quality requirements.</p>
+</div>
+<!-- 3 Insights Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Article 1 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col justify-between hover:shadow-sm transition-all">
+<div class="p-6">
+<span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Superfood Economics</span>
+<h3 class="font-headline font-bold text-lg text-on-surface mt-2 mb-3 hover:text-primary transition-colors">
+            Sourcing Export-Grade Moringa for European Markets
+          </h3>
+<p class="font-body text-xs text-secondary leading-relaxed">
+            An analysis of stricter EU maximum residue limits (MRLs) and why direct shade-dried Tamil Nadu clusters are dominating high-margin nutraceutical supply chains.
+          </p>
+</div>
+<div class="px-6 pb-6 pt-2 flex items-center justify-between text-xs text-secondary border-t border-outline-variant/20">
+<span>5 min read</span>
+<a class="font-semibold text-primary inline-flex items-center gap-1 hover:underline" data-briefing href="#contact">Request Briefing <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col justify-between hover:shadow-sm transition-all">
+<div class="p-6">
+<span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Trade Operations</span>
+<h3 class="font-headline font-bold text-lg text-on-surface mt-2 mb-3 hover:text-primary transition-colors">
+            Understanding Incoterms 2020: FOB vs. CIF for Indian Agricultural Bulk Orders
+          </h3>
+<p class="font-body text-xs text-secondary leading-relaxed">
+            How institutional buyers calculate freight insurance, port handling at Nhava Sheva vs. Mundra, and optimal container turnaround strategies.
+          </p>
+</div>
+<div class="px-6 pb-6 pt-2 flex items-center justify-between text-xs text-secondary border-t border-outline-variant/20">
+<span>7 min read</span>
+<a class="font-semibold text-primary inline-flex items-center gap-1 hover:underline" data-briefing href="#contact">Request Briefing <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col justify-between hover:shadow-sm transition-all">
+<div class="p-6">
+<span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Quality Assurance</span>
+<h3 class="font-headline font-bold text-lg text-on-surface mt-2 mb-3 hover:text-primary transition-colors">
+            Quality Benchmarks: Curcumin Content &amp; Aflatoxin Tolerances in Spices
+          </h3>
+<p class="font-body text-xs text-secondary leading-relaxed">
+            Navigating FDA and Codex Alimentarius guidelines. Why HPLC testing before stuffing containers prevents costly customs quarantines abroad.
+          </p>
+</div>
+<div class="px-6 pb-6 pt-2 flex items-center justify-between text-xs text-secondary border-t border-outline-variant/20">
+<span>6 min read</span>
+<a class="font-semibold text-primary inline-flex items-center gap-1 hover:underline" data-briefing href="#contact">Request Briefing <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. B2B BULK INQUIRY (RFQ) & DIRECT CONTACT SECTION -->
+<section class="py-16 lg:py-24 bg-inverse-surface text-inverse-on-surface" id="contact">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Side: Direct Export Desk -->
+<div class="lg:col-span-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-inverse-primary text-xs font-semibold uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-sm">contact_phone</span>
+<span>Direct Export Desk</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl font-extrabold text-inverse-on-surface mb-4">Request a Bulk Export Quote</h2>
+<p class="font-body text-sm sm:text-base text-surface-variant/80 mb-8 leading-relaxed">
+              Tell us what you need, where it is going, and your preferred shipping terms. We will respond with availability, specifications, and applicable FOB or CIF pricing.
+            </p>
+<div class="space-y-4">
+<a class="flex items-center gap-4 rounded-xl border border-outline/20 bg-surface-container/5 p-4 hover:bg-surface-container/10 transition-colors" href="tel:0987654321">
+<span class="w-10 h-10 rounded-lg bg-surface-container/10 flex items-center justify-center text-primary-fixed shrink-0">
+<span class="material-symbols-outlined">call</span>
+</span>
+<span>
+<span class="block font-body text-xs text-surface-variant/70">Call the export desk</span>
+<span class="block font-headline font-bold text-base text-inverse-on-surface mt-0.5">0987654321</span>
+</span>
+</a>
+<a class="flex items-center gap-4 rounded-xl border border-outline/20 bg-surface-container/5 p-4 hover:bg-surface-container/10 transition-colors" href="mailto:export@greentechsol.in">
+<span class="w-10 h-10 rounded-lg bg-surface-container/10 flex items-center justify-center text-primary-fixed shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</span>
+<span>
+<span class="block font-body text-xs text-surface-variant/70">Email specifications and documents</span>
+<span class="block font-headline font-bold text-base text-inverse-on-surface mt-0.5 break-all">export@greentechsol.in</span>
+</span>
+</a>
+</div>
+</div>
+<!-- Right Side: High-Converting B2B RFQ Form Card (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest text-on-surface p-8 sm:p-10 rounded-xl shadow-lg border border-outline-variant/40">
+<div class="mb-6">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Formal Bulk Price &amp; Container Quotation</h3>
+<p class="font-body text-xs sm:text-sm text-secondary mt-1">
+              Complete the parameters below to receive spec sheets, packing breakdowns, and FOB/CIF rates.
+            </p>
+</div>
+<form class="space-y-4" id="export-rfq">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="full-name">Full Name &amp; Business Title *</label>
+<input autocomplete="name" class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2.5 px-3" id="full-name" name="fullName" placeholder="e.g. John Miller, Head of Sourcing" required type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="email">Corporate Email Address *</label>
+<input autocomplete="email" class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2.5 px-3" id="email" name="email" placeholder="sourcing@company.com" required type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="company">Company Name &amp; Registration *</label>
+<input autocomplete="organization" class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2.5 px-3" id="company" name="company" placeholder="e.g. Global AgriFoods Ltd" required type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="destination">Destination Country &amp; Port (POD) *</label>
+<input class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2.5 px-3" id="destination" name="destination" placeholder="e.g. Netherlands - Port of Rotterdam" required type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="sm:col-span-1">
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="commodity">Commodity Category *</label>
+<select class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2.5 px-3" id="commodity" name="commodity" required>
+<option value="">Select a commodity</option>
+<option>Organic Moringa Leaf Powder</option>
+<option>Whole / Ground Spices (Turmeric, Pepper)</option>
+<option>Indian Basmati / Non-Basmati Rice</option>
+<option>Export Groundnuts (Peanuts)</option>
+<option>Organic Vermicompost</option>
+<option>Eco Areca Dinnerware &amp; Jute Bags</option>
+<option>Mixed Agricultural Consignment</option>
+</select>
+</div>
+<div>
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="volume">Estimated Volume *</label>
+<input class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2.5 px-3" id="volume" name="volume" placeholder="e.g. 1x 20ft FCL or 25 MT" required type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="incoterm">Preferred Incoterm *</label>
+<select class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2.5 px-3" id="incoterm" name="incoterm" required>
+<option value="">Select Incoterm</option>
+<option>FOB (Indian Departure Port)</option>
+<option>CIF (Destination Port)</option>
+<option>CFR (Cost &amp; Freight)</option>
+<option>Ex-Works Factory</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label text-xs font-semibold text-on-surface mb-1" for="specifications">Custom Packaging or Quality Specifications</label>
+<textarea class="w-full text-xs rounded-lg bg-surface-container-low border-outline-variant/40 text-on-surface focus:border-primary focus:ring-primary py-2 px-3" id="specifications" name="specifications" placeholder="Specify mesh size, curcumin %, aflatoxin limit, packaging preference (25kg bags vs retail pouches), target shipment date..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-2">
+<input class="rounded text-primary focus:ring-primary" id="samples" name="samples" type="checkbox"/>
+<label class="text-xs text-secondary font-medium" for="samples">Please include courier sample request details in quotation</label>
+</div>
+<button class="w-full py-3.5 px-6 rounded-full bg-tertiary hover:bg-[#3b5873] text-white font-headline font-bold text-sm tracking-wide shadow-md transition-all active:scale-[0.99] flex items-center justify-center gap-2" type="submit">
+<span>Prepare Export RFQ Email</span>
+<span class="material-symbols-outlined text-lg">mail</span>
+</button>
+<p class="text-[11px] text-center text-secondary mt-2">This opens a pre-addressed email in your mail app. Review and send it to complete your inquiry.</p>
+<p aria-live="polite" class="hidden rounded-lg bg-primary/10 px-4 py-3 text-center text-xs font-semibold text-primary" id="rfq-status" role="status"></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FLOATING CALL ACTION -->
+<aside aria-label="Call the export desk" class="fixed bottom-5 right-5 z-40">
+<a aria-label="Call Green Tech Solution at 0987654321" class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-xl hover:scale-105 active:scale-95 transition-all" href="tel:0987654321" title="Call 0987654321">
+<span class="material-symbols-outlined text-2xl">call</span>
+</a>
+</aside>
+<!-- SHARED FOOTER COMPONENT -->
+<footer class="w-full bg-surface-container-high border-t border-outline-variant/40">
+<div class="max-w-7xl mx-auto px-6 lg:px-8 py-12 flex flex-col gap-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-xl">eco</span>
+</div>
+<span class="font-headline text-xl font-bold text-primary">Green Tech Solution Enterprises</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant max-w-sm leading-relaxed">Indian agricultural and sustainable products, prepared for international buyers with clear specifications and export support.</p>
+</div>
+<nav aria-label="Footer navigation" class="flex flex-col gap-3">
+<h2 class="font-headline font-bold text-base text-primary">Explore</h2>
+<a class="font-body text-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#commodities">Commodities</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#certifications">Quality &amp; Certifications</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#why-us">Why Choose Us</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#insights">Market Insights</a>
+</nav>
+<div class="flex flex-col gap-3">
+<h2 class="font-headline font-bold text-base text-primary">Contact</h2>
+<a class="font-body text-sm text-on-surface-variant hover:text-on-surface transition-colors" href="tel:0987654321">0987654321</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-on-surface transition-colors break-all" href="mailto:export@greentechsol.in">export@greentechsol.in</a>
+<a class="inline-flex items-center gap-1 font-label text-xs font-semibold text-primary hover:underline mt-1" href="#contact">
+<span>Request an Export Quote</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant">
+<div>© 2026 Green Tech Solution Enterprises. All rights reserved.</div>
+<div class="flex flex-wrap justify-center items-center gap-3 sm:gap-6">
+<a class="hover:text-primary transition-colors" href="mailto:export@greentechsol.in?subject=Terms%20of%20Trade%20Request" title="Request Terms of Trade by email">Terms of Trade</a>
+<span aria-hidden="true">•</span>
+<a class="hover:text-primary transition-colors" href="mailto:export@greentechsol.in?subject=Privacy%20Policy%20Request" title="Request Privacy Policy by email">Privacy Policy</a>
+<span aria-hidden="true">•</span>
+<a class="hover:text-primary transition-colors" href="mailto:export@greentechsol.in?subject=Phytosanitary%20Disclaimer%20Request" title="Request Phytosanitary Disclaimer by email">Phytosanitary Disclaimer</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const siteHeader = document.getElementById("site-header");
+  const updateHeader = () => siteHeader.classList.toggle("is-scrolled", window.scrollY > 12);
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
+
+  const heroVideo = document.getElementById("hero-video");
+
+  if (heroVideo) {
+    if (reducedMotion) {
+      heroVideo.pause();
+    } else {
+      heroVideo.play().catch(() => {});
+    }
+  }
+
+  const menuButton = document.getElementById("menu-button");
+  const menuIcon = document.getElementById("menu-icon");
+  const mobileNavigation = document.getElementById("mobile-navigation");
+
+  const setMenuOpen = (open, returnFocus = false) => {
+    mobileNavigation.hidden = !open;
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+    menuIcon.textContent = open ? "close" : "menu";
+    if (returnFocus) menuButton.focus();
+  };
+
+  menuButton.addEventListener("click", () => {
+    setMenuOpen(menuButton.getAttribute("aria-expanded") !== "true");
+  });
+
+  mobileNavigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMenuOpen(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+      setMenuOpen(false, true);
+    }
+  });
+
+  window.matchMedia("(min-width: 1280px)").addEventListener("change", (event) => {
+    if (event.matches) setMenuOpen(false);
+  });
+
+  const filterButtons = document.querySelectorAll(".catalog-filter");
+  const commodityCards = document.querySelectorAll(".commodity-card");
+  const catalogStatus = document.getElementById("catalog-status");
+  const activeClasses = ["bg-primary", "text-on-primary", "shadow-sm"];
+  const inactiveClasses = ["bg-surface-container", "text-on-surface-variant", "hover:bg-surface-container-high"];
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+      let visibleCount = 0;
+
+      filterButtons.forEach((filterButton) => {
+        const selected = filterButton === button;
+        filterButton.setAttribute("aria-pressed", String(selected));
+        filterButton.classList.remove(...activeClasses, ...inactiveClasses);
+        filterButton.classList.add(...(selected ? activeClasses : inactiveClasses));
+      });
+
+      commodityCards.forEach((card) => {
+        const visible = filter === "all" || card.dataset.category === filter;
+        card.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+
+      catalogStatus.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? "commodity" : "commodities"}`;
+    });
+  });
+
+  const form = document.getElementById("export-rfq");
+  const commodity = document.getElementById("commodity");
+  const specifications = document.getElementById("specifications");
+  const fullName = document.getElementById("full-name");
+  const contact = document.getElementById("contact");
+
+  const moveToInquiry = () => {
+    contact.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth" });
+    fullName.focus({ preventScroll: true });
+  };
+
+  document.querySelectorAll("[data-rfq]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      commodity.value = link.closest(".commodity-card").dataset.commodity;
+      moveToInquiry();
+    });
+  });
+
+  document.querySelector("[data-profile-request]").addEventListener("click", (event) => {
+    event.preventDefault();
+    commodity.value = "Mixed Agricultural Consignment";
+    specifications.value = "Please include the latest company profile and export capability document with this inquiry.";
+    moveToInquiry();
+  });
+
+  document.querySelectorAll("[data-briefing]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const title = link.closest("article, .bg-surface-container-low").querySelector("h3").textContent.trim();
+      commodity.value = "Mixed Agricultural Consignment";
+      specifications.value = `Please send the export briefing: ${title}`;
+      moveToInquiry();
+    });
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const subject = `Export RFQ — ${data.get("commodity")} — ${data.get("company")}`;
+    const body = [
+      "Dear Green Tech Solution Export Desk,",
+      "",
+      "Please prepare a bulk export quotation with the following requirements:",
+      "",
+      `Name / Title: ${data.get("fullName")}`,
+      `Corporate Email: ${data.get("email")}`,
+      `Company / Registration: ${data.get("company")}`,
+      `Destination / Port: ${data.get("destination")}`,
+      `Commodity: ${data.get("commodity")}`,
+      `Estimated Volume: ${data.get("volume")}`,
+      `Preferred Incoterm: ${data.get("incoterm")}`,
+      `Courier Samples: ${data.get("samples") ? "Requested" : "Not requested"}`,
+      "",
+      "Packaging / Quality Specifications:",
+      data.get("specifications") || "No additional specifications provided.",
+      "",
+      "Regards,",
+      data.get("fullName")
+    ].join("\n");
+
+    const status = document.getElementById("rfq-status");
+    status.textContent = "Your RFQ is ready. Your mail app should open now; send the prepared email to complete your inquiry.";
+    status.classList.remove("hidden");
+    window.location.href = `mailto:export@greentechsol.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+});
+</script>
+</body></html>
